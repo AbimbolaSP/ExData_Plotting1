@@ -16,7 +16,7 @@ rm(data)
 
 ##creating first plot in png file device
 
-hist(datatoUse$Global_reactive_power, col = "red", 
-     main = "Global Active Power", xlab = "Global active power (kilowatt)")
+hist(datatoUse$Global_active_power, col = "red", 
+     main = "Global Active Power", xlab = "Global active power (kilowatts)")
 dev.copy(png, file = "plot1.png", width=480, height=480, units = "px")
 dev.off()
